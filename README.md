@@ -33,13 +33,13 @@ public static void Log(object message)
 
 我们通过Unity的Debug.Log函数跟踪过去，发现了这样一个有意思的写法
 
-![QQ截图20191202205850](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202205850.png)
+![QQ截图20191202205850](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202205850.png)
 
-![QQ截图20191202205911](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202205911.png)
+![QQ截图20191202205911](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202205911.png)
 
 函数上方有一个Conditional属性。我们查看它的含义发现
 
-![QQ截图20191202210253](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202210253.png)
+![QQ截图20191202210253](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202210253.png)
 
 当定义了UNITY_ASSERTIONS宏的时候，该函数才会被调用。它其实就相当于如下函数
 
@@ -67,19 +67,19 @@ public static void Assert(bool condition, string message, Object context)
 
 打开VS，选择文件，新建，项目。选择.net framework类库，注意框架要选择.net 3.5，因为Unity里面最低版本是3.5
 
-![QQ截图20191202211512](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202211512.png)
+![QQ截图20191202211512](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202211512.png)
 
-![QQ截图20191202211035](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202211035.png)
+![QQ截图20191202211035](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202211035.png)
 
 然后添加UnityEngine的dll引用
 
-![QQ截图20191202211106](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202211106.png)
+![QQ截图20191202211106](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202211106.png)
 
 
 
-![QQ截图20191202211132](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202211132.png)
+![QQ截图20191202211132](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202211132.png)
 
-![QQ截图20191202211157](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202211157.png)
+![QQ截图20191202211157](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202211157.png)
 
 接下来只需要在Program.cs文件编写代码如下
 
@@ -140,17 +140,17 @@ public class QLog
 
 我们查看QLog的属性，然后确认如下
 
-![QQ截图20191202211949](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202211949.png)
+![QQ截图20191202211949](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202211949.png)
 
 接下来选择release版本，点击生成即可
 
-![QQ截图20191202212053](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202212053.png)
+![QQ截图20191202212053](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202212053.png)
 
-![QQ截图20191202212204](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202212204.png)
+![QQ截图20191202212204](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202212204.png)
 
 我们将生成好的QLog.dll放入Unity的Plugins文件夹下面即可
 
-![QQ截图20191202212300](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202212300.png)
+![QQ截图20191202212300](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202212300.png)
 
 接下来，我们编写如下测试案例
 
@@ -176,13 +176,13 @@ public class QLogTest : MonoBehaviour
 
 ### 在不开启QLog宏的时候打印如下
 
-![QQ截图20191202212517](https://github.com/onelei/RedDotManager/blob/master/Images/QQ截图20191202212517.png)
+![QQ截图20191202212517](https://github.com/onelei/QLog/blob/master/Images/QQ截图20191202212517.png)
 
 只有6条打印信息，其中QLog.Sample并没有打印出来。
 
 ### 在开启QLog宏的时候打印如下
 
-![QQ截图2019120221243https://github.com/onelei/RedDotManager/blob/master/Images/es\QQ截图20191202212434.png)
+![QQ截图2019120221243https://github.com/onelei/QLog/blob/master/Images/es\QQ截图20191202212434.png)
 
 发现当QLog宏开启的时候，QLog.Sample被打印了出来。
 
