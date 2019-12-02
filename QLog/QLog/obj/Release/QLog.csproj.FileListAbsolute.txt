@@ -1,0 +1,9 @@
+E:\Projects\QLog\QLog\QLog\obj\Release\QLog.csprojAssemblyReference.cache
+E:\Projects\QLog\QLog\QLog\obj\Release\QLog.csproj.CoreCompileInputs.cache
+E:\Projects\QLog\QLog\QLog\bin\Release\QLog.dll
+E:\Projects\QLog\QLog\QLog\bin\Release\QLog.pdb
+E:\Projects\QLog\QLog\QLog\bin\Release\UnityEngine.dll
+E:\Projects\QLog\QLog\QLog\bin\Release\UnityEngine.xml
+E:\Projects\QLog\QLog\QLog\obj\Release\QLog.csproj.CopyComplete
+E:\Projects\QLog\QLog\QLog\obj\Release\QLog.dll
+E:\Projects\QLog\QLog\QLog\obj\Release\QLog.pdb
